@@ -9,3 +9,5 @@ var newPlayer = function(name){
 	var np = new player(name, 'test');
 	return np;
 }
+
+
