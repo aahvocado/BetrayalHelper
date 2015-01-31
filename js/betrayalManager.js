@@ -34,9 +34,8 @@ $(document).ready(function(){
             // Javascript function JSON.parse to parse JSON data
             var jsonObj = JSON.parse(http_request.responseText);
             //oh man please work
-            console.log(player.character);
             var jsonFound = jsonObj[player.character];
-
+            console.log(jsonFound);
            	$("#char_list").append(jsonFound[0].name);
         	}
        	}
