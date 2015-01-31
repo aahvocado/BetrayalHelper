@@ -6,6 +6,8 @@ function player (name, character){
 };
 
 $(document).ready(function(){
+	//start
+	$('speed_stat')
 	// Load JSON data
 	function loadJSON(player)
     {
@@ -53,11 +55,13 @@ $(document).ready(function(){
 	$('.ui.form')
 	  .form({
 	    name: {
+	    	optional   : true,
+
 	      identifier  : 'name',
 	      rules: [
 	        {
-	          type   : 'empty',
-	          prompt : 'Please enter your name'
+	         	type   : 'empty',
+	          	prompt : 'Please enter your name'
 	        }
 	      ]
 	    },
@@ -75,7 +79,7 @@ $(document).ready(function(){
   	$('.ui.form').submit(function(e){ 
   		var $form = $('.ui.form');
   		var allfields = $form.form('get values');
-		if(allfields.name!='' && allfields.character!=''){
+		if(allfields.character!=''){//allfields.name!='' && 
 			loadJSON(new player(allfields.name, allfields.character));
 			// $("#char_list").append(allfields.name + " playing as " + allfields.character);
 			$form.form('clear');
