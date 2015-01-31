@@ -15,12 +15,9 @@ hr {
 	text-align: center;
 }
 /* Override some Semantic UI stuff*/
-.ui{
-	border-radius: 0rem;
-}
 .ui.selection.dropdown{
 	width: 15em;
-	border-radius: 0rem;
+	padding: .7em 1.1em;	
 }
 /* Differentiate characters */
 .ui.dropdown .menu>.item.red_char{

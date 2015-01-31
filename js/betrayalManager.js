@@ -17,16 +17,24 @@ $(document).ready(function(){
       	transition: 'drop'
 		})
     ;
+
+	// Place new Player with Character into the place
+	$(".button.add_player").click(function(){
+
+		var playerName = $("#player_name_input").val();
+		if(playerName !== ''){
+			$("#char_list").append(playerName + " playing " +$(this).text());
+			resetForm("#player_name_input");
+			$('.button.add_player').popup('show', false);
+			console.log("yay");
+		}else{
+			$('.button.add_player').popup('show', true);
+
+		}
+	});
 });
 
-// Place new Player with Character into the place
-$("#red_char").click(function(){
-	var playerName = $("#player_name_input").val();
-	if(playerName !== ''){
-		$("#char_list").append(playerName + " playing " +$(this).text());
-	}
-	resetForm("#player_name_input");
-});
+
 // Resets the fields in a specified form ID
 function resetForm(formID){
 	$(formID)
