@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Betrayal at House on the Hill helper</title>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Semantic -->
+    <script src="js/semantic.min.js"></script>
+    <link href="css/semantic.min.css" rel="stylesheet">
+    <!-- Custom -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="scripts/betrayalManager.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,53 +24,55 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello, world!</h1>
-      features:	
-      	-enter name of player, select character, automatically order who goes first
-      	-dice roller?
-        -custom character?
-
-      <div class="input-group">
-        <input id="player_name_input" name="test" type="text" class="form-control" aria="..." placeholder="Enter player's name">
-              <div class="input-group-btn">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Character <span class="caret"></span></button>
-              <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                <li><a class="red_char" href="#">Ox Bellows</a></li>
-                <li><a class="red_char" href="#">Darrin 'Flash' Williams</a></li>
-                <li><a class="white_char" href="#">Father Rhinehardt</a></li>
-                <li><a class="white_char" href="#">Professor Longfellow</a></li>
-                <li><a class="purple_char" href="#">Heather Granviille</a></li>
-                <li><a class="purple_char" href="#">Jenny LeClerc</a></li>
-                <li><a class="green_char" href="#">Peter Akimoto</a></li>
-                <li><a class="green_char" href="#">Brandon Jaspers</a></li>
-                <li><a class="blue_char" href="#">Vivian Lopez</a></li>
-                <li><a class="blue_char" href="#">Madame Zostra</a></li>
-                <li><a class="orange_char" href="#">Zoe Ingstrom</a></li>
-                <li><a class="orange_char" href="#">Missy Dubourde</a></li>
-              </ul>
-            </div>
+      <div class="header">
+        <h1>Betrayal at House on the Hill Helper</h1>
       </div>
-    <hr>
+      <div class="new_player">
+        <!-- input new player name field -->
+        <div id="player_name_input" class="ui input">
+          <input type="text" placeholder="Player Name">
+        </div>
+        <!-- select appropriate character -->
+        <div class="ui selection dropdown">
+          <input type="hidden" name="character">
+          <div class="default text">Select Character</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item red_char">Ox Bellows</div>
+            <div class="item red_char">Darrin 'Flash' Williams</div>
+
+            <div class="item white_char">Father Rhinehardt</div>
+            <div class="item white_char">Professor Longfellow</div>
+
+            <div class="item purple_char">Heather Granviille</div>
+            <div class="item purple_char">Jenny LeClerc</div>
+
+            <div class="item green_char">Peter Akimoto</div>
+            <div class="item green_char">Brandon Jaspers</div>
+
+            <div class="item blue_char">Vivian Lopez</div>
+            <div class="item blue_char">Madame Zostra</div>
+
+            <div class="item orange_char">Zoe Ingstrom</div>
+            <div class="item orange_char">Missy Dubourde</div>
+          </div>
+        </div>
+      </div>
+
+    
+      <hr> 
+      <!-- display list of players here -->
       <div id="char_list">
         <p>Gonna add stuff here?</p>
       </div>
-      <script>
 
-      </script>
-
+    <!-- Footer -->
     <footer>
       <hr>
       <p>Daniel Xiao made this! Github link soon</p>
     </footer>
 
     </div> <!-- Container -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="scripts/betrayalManager.js"></script>
 
   </body>
 </html>

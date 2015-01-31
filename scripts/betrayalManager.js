@@ -11,9 +11,15 @@ var newPlayer = function(name){
 };
 
 $(document).ready(function(){
-	
+	// Some semantic UI buisness
+	$('.ui.dropdown')
+      .dropdown({    
+      	transition: 'drop'
+		})
+    ;
 });
 
+// Place new Player with Character into the place
 $("#red_char").click(function(){
 	var playerName = $("#player_name_input").val();
 	if(playerName !== ''){
@@ -21,7 +27,7 @@ $("#red_char").click(function(){
 	}
 	resetForm("#player_name_input");
 });
-
+// Resets the fields in a specified form ID
 function resetForm(formID){
 	$(formID)
 	  .not(':button, :submit, :reset, :hidden')
@@ -29,3 +35,4 @@ function resetForm(formID){
 	  .removeAttr('checked')
 	  .removeAttr('selected');
 }
+
