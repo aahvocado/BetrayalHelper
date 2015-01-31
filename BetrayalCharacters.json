@@ -1,6 +1,6 @@
 {
-	//the stat start value is the index
-	"Ox Bellows":{
+	"ox bellows":[{
+		"name":"Ox Bellows",
 		"Might":[4, 5, 5, 6, 6, 7, 8, 8],
 		"MightStart": 2,
 		"Speed":[2, 2, 2, 3, 4, 5, 5, 6],
@@ -10,83 +10,31 @@
 		"Knowledge":[2, 2, 3, 3, 5, 5, 6, 6],
 		"KnowledgeStart": 2,
 		"Color":"red"
-	},
+	}],
 
-	"Darrin 'Flash' Williams":{
-		"Might":[7,6,6,5,4,3,3,2],
-		"Speed":[8,7,7,6,5,4,4,4],
-		"Sanity":[,7,5,5,5,4,3,2,1],
-		"Knowledge":[7,5,5,5,4,3,2,2],
+	"darrin 'flash' williams":[{
+		"name":"Darrin 'Flash' Williams",
+		"Might":[4, 5, 5, 6, 6, 7, 8, 8],
+		"MightStart": 2,
+		"Speed":[2, 2, 2, 3, 4, 5, 5, 6],
+		"SpeedStart": 4,
+		"Sanity":[2, 2, 3, 4, 5, 5, 6, 7],
+		"SanityStart": 3,
+		"Knowledge":[2, 2, 3, 3, 5, 5, 6, 6],
+		"KnowledgeStart": 2,
 		"Color":"red"
-	},
+	}],
 
-	"Father Rhinehardt":{
-		"Might":[7,5,5,4,4,2,2,1],
-		"Speed":[7,7,6,5,4,3,3,2],
-		"Sanity":[8,7,7,6,5,5,4,3],
-		"Knowledge":[8,6,6,5,4,3,3,1],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	},
-
-	"Darrin 'Flash' Williams":{
-		"Might":[],
-		"Speed":[],
-		"Sanity":[],
-		"Knowledge":[],
-	}
+	"father rhinehardt":[{
+		"name":"Father Rhinehardt",
+		"Might":[4, 5, 5, 6, 6, 7, 8, 8],
+		"MightStart": 2,
+		"Speed":[2, 2, 2, 3, 4, 5, 5, 6],
+		"SpeedStart": 4,
+		"Sanity":[2, 2, 3, 4, 5, 5, 6, 7],
+		"SanityStart": 3,
+		"Knowledge":[2, 2, 3, 3, 5, 5, 6, 6],
+		"KnowledgeStart": 2,
+		"Color":"red"
+	}]
 }
