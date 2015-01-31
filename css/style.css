@@ -15,10 +15,7 @@ hr {
 	text-align: center;
 }
 /* Override some Semantic UI stuff*/
-.ui.selection.dropdown{
-	width: 15em;
-	padding: .7em 1.1em;	
-}
+
 /* Differentiate characters */
 .ui.dropdown .menu>.item.red_char{
 	color: red;

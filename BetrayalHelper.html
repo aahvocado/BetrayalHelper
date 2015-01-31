@@ -27,44 +27,47 @@
       <div class="header">
         <h1>Betrayal at House on the Hill Helper</h1>
       </div>
-      <div class="new_player">
+      <form class="ui form segment new_player">
         <!-- input new player name field -->
-        <div id="player_name_input" class="ui input">
-          <input type="text" placeholder="Player Name">
-        </div>
-        <!-- select appropriate character -->
-        <div class="ui selection dropdown">
-          <input type="hidden" name="character">
-          <div class="default text">Select Character</div>
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <div class="item red_char">Ox Bellows</div>
-            <div class="item red_char">Darrin 'Flash' Williams</div>
+        <div class="two fields">
+          <div class="field">
+            <input placeholder="Player Name" name="name" type="text">
+          </div>
+          <!-- select appropriate character -->
+          <div class="field">
+            <div class="ui selection dropdown">
+              <input type="hidden" name="character">
+                <div class="default text">Character</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                <div class="item red_char">Ox Bellows</div>
+                <div class="item red_char">Darrin 'Flash' Williams</div>
 
-            <div class="item white_char">Father Rhinehardt</div>
-            <div class="item white_char">Professor Longfellow</div>
+                <div class="item white_char">Father Rhinehardt</div>
+                <div class="item white_char">Professor Longfellow</div>
 
-            <div class="item purple_char">Heather Granviille</div>
-            <div class="item purple_char">Jenny LeClerc</div>
+                <div class="item purple_char">Heather Granviille</div>
+                <div class="item purple_char">Jenny LeClerc</div>
 
-            <div class="item green_char">Peter Akimoto</div>
-            <div class="item green_char">Brandon Jaspers</div>
+                <div class="item green_char">Peter Akimoto</div>
+                <div class="item green_char">Brandon Jaspers</div>
 
-            <div class="item blue_char">Vivian Lopez</div>
-            <div class="item blue_char">Madame Zostra</div>
+                <div class="item blue_char">Vivian Lopez</div>
+                <div class="item blue_char">Madame Zostra</div>
 
-            <div class="item orange_char">Zoe Ingstrom</div>
-            <div class="item orange_char">Missy Dubourde</div>
+                <div class="item orange_char">Zoe Ingstrom</div>
+                <div class="item orange_char">Missy Dubourde</div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="ui basic button add_player" id="add_player">
+        <div class="ui basic submit button add_player" id="add_player">
           Add Player
         </div>
         <div class="ui custom popup add_player">
           Oops, enter a name and select a character!
         </div>
-      </div>
+      </form> <!-- Form -->
 
     
       <hr> 
