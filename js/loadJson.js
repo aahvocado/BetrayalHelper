@@ -28,6 +28,7 @@ function loadJSON(player)
       //oh man please work
       var jsonFound = jsonObj[player.character];
       console.log(jsonFound);
+
      	$("#char_list").append(jsonFound[0].name);
   	}
  	}

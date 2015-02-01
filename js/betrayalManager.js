@@ -1,11 +1,7 @@
-var numPlayers;//number of players max 6
-
-function player (name, character){
-	this.name = name;
-	this.character = character;
-};
 
 $(document).ready(function(){	
+
+
 	// Some semantic UI buisness
 	$('.ui.dropdown')
 	  .dropdown({
@@ -42,8 +38,9 @@ $(document).ready(function(){
   		var $form = $('.ui.form');
   		var allfields = $form.form('get values');
 		if(allfields.character!=''){//allfields.name!='' && 
-			loadJSON(new player(allfields.name, allfields.character));
+			// loadJSON(new player(allfields.name, allfields.character));
 			// $("#char_list").append(allfields.name + " playing as " + allfields.character);
+	      	createPlayer(allfields);
 			$form.form('clear');
 		}
 	    e.preventDefault(); //usually use this, but below works best here.
