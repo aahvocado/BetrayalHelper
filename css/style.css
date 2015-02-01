@@ -70,6 +70,7 @@ ul{
 }
 .speed.stat.holder{
 	/*display: inline-block;*/
+	position: relative;
 	white-space: nowrap;
 }
 .speed.stat li{
