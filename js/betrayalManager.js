@@ -1,7 +1,5 @@
 
 $(document).ready(function(){	
-
-
 	// Some semantic UI buisness
 	$('.ui.accordion')
 	  .accordion()
@@ -41,16 +39,65 @@ $(document).ready(function(){
   		var $form = $('.ui.form');
   		var allfields = $form.form('get values');
 		if(allfields.character!=''){//allfields.name!='' && 
-			// loadJSON(new player(allfields.name, allfields.character));
-			// $("#char_list").append(allfields.name + " playing as " + allfields.character);
-	      	console.log(allfields);	      
-	      	createPlayer(allfields);
+	      	// console.log(allfields);	   
+			removeSelectable(getCharColor(allfields.character));//removes color from selectable characters
+	      	createPlayer(allfields);//make the player card
 			$form.form('clear');
 		}
 	    e.preventDefault(); //usually use this, but below works best here.
 	});
+
 });
 
+function showSelectable(color_char){
+	$('.'+color_char).show();
+}
+function removeSelectable(color_char){
+	$('.'+color_char).hide();
+}
+function getCharColor(charName){
+	switch(charName){
+		case 'ox bellows':
+			return 'red_char';
+			break;
+		case "darrin 'flash' williams":
+			return 'red_char';
+			break;
+		case 'father rhinehardt':
+			return 'white_char';
+			break;
+		case 'professor longfellow':
+			return 'white_char';
+			break;
+		case 'peter akimoto':
+			return 'green_char';
+			break;
+		case 'brandon jaspers':
+			return 'green_char';
+			break;
+		case 'jenny leclerc':
+			return 'purple_char';
+			break;
+		case 'heather granville':
+			return 'purple_char';
+			break;
+		case 'vivan lopez':
+			return 'blue_char';
+			break;
+		case 'madame zostra':
+			return 'blue_char';
+			break;
+		case 'missy dubourde':
+			return 'orange_char';
+			break;
+		case 'zoe ingstrom':
+			return 'orange_char';
+			break;
+		default:
+			console.log('secret bananas!')
+			break;
+		}
+}
 
 
 

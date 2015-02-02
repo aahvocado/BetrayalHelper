@@ -48,7 +48,6 @@ function createPlayer(data){
 function makeStatCard(player, stat){
 	var name = player.character.shortname;
 	var htmltarget = '.minimized.content.' + name;
-	console.log(htmltarget);
 	//make a tiny card
 	$('<div></div>',{
 		class:'ui tiny card '+stat.name+' '+name
