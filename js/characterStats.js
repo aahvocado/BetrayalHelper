@@ -69,7 +69,11 @@ function makeStatCard(player, stat){
 	//append the stats
 	$('.stat.holder.'+stat.name+'.'+name).append('<div class="inactive item stat '+stat.name+' '+name+'" id="'+stat.name+' '+name+' '+'empty'+'">'+'</div>')
 	$.map(stat.spread, function(val, i){
-		$('.stat.holder.'+stat.name+'.'+name).append('<div class="inactive item stat '+stat.name+' '+name+'" id="'+stat.name+' '+name+' '+i+'">'+val+'</div>')
+		if(i===stat.defaultIndex){
+			$('.stat.holder.'+stat.name+'.'+name).append('<div class="inactive default item stat '+stat.name+' '+name+'" id="'+stat.name+' '+name+' '+i+'">'+val+'</div>')
+		}else{
+			$('.stat.holder.'+stat.name+'.'+name).append('<div class="inactive item stat '+stat.name+' '+name+'" id="'+stat.name+' '+name+' '+i+'">'+val+'</div>')
+		}
 	})		
 	$('.stat.holder.'+stat.name+'.'+name).append('<div class="inactive item stat '+stat.name+' '+name+'" id="'+stat.name+' '+name+' '+'empty'+'">'+'</div>')
 	//buttons
