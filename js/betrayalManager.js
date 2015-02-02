@@ -3,6 +3,9 @@ $(document).ready(function(){
 
 
 	// Some semantic UI buisness
+	$('.ui.accordion')
+	  .accordion()
+	;
 	$('.ui.dropdown')
 	  .dropdown({
 	    // you can use any ui transition
@@ -40,6 +43,7 @@ $(document).ready(function(){
 		if(allfields.character!=''){//allfields.name!='' && 
 			// loadJSON(new player(allfields.name, allfields.character));
 			// $("#char_list").append(allfields.name + " playing as " + allfields.character);
+	      	console.log(allfields);	      
 	      	createPlayer(allfields);
 			$form.form('clear');
 		}

@@ -14,6 +14,9 @@ hr {
 	margin-right: auto;
 	text-align: center;
 }
+.header{
+	/*margin-bottom: 5em;*/
+}
 ul{
 	list-style: none;
 }
@@ -72,11 +75,22 @@ ul{
 	position: relative;
 	white-space: nowrap;
 }
+/* minimize accordion stuff */
+.ui.minimize{
+	position: absolute;
+}
 /* Override some Semantic UI stuff*/
+.ui.card>.content>.header{
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+.ui.four.cards>.card:nth-child(4n+1){
+	clear:none;
+}
 .ui.card{
 	overflow-x: hidden;
 	overflow-y: hidden;
-	width: 8em;
+	/*width: 8em;*/
 	/*height: 10rem;*/
 }
 

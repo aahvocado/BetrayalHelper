@@ -37,6 +37,7 @@ function updateStat(stat, charclassname, dir){
 		});
 		makeInActive(stat, charclassname, stat._index-dir);//previous stat
 		makeActive(stat, charclassname, stat._index);
+		
 	}
 }
 //toggle the inactive stat for css
@@ -58,6 +59,9 @@ $(document).ready(function(){
 	updateStat(fake,'test',0);
 
 	//TEST STUFF
+	$(".accordion_toggle").click(function(e){
+		// $('.ui.accordion').accordion();
+	});
 	// Decrement a stat
 	$('#minus_stat_test').click(function(e){
 		updateStat(fake,'test',-1);
