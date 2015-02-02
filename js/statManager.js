@@ -26,6 +26,14 @@ function makeStatClickListener(player, stat, dir){
 			break;
 	}
 }
+function makeCloseListener(character){
+	var charname = character.shortname;
+	$('.'+charname+'.close').on('click',function(){
+		$('.main.card'+'.'+charname).remove();
+		removeSelectable(getCharColor(character.name));//give color from this character
+	});
+
+}
 //take in a specific stat holder and animate it
 function updateStat(stat, charclassname, dir){
 	if((stat._index>0 && dir<0)||(stat._index<maxIndex-1 && dir>0)||dir==0){
@@ -37,7 +45,7 @@ function updateStat(stat, charclassname, dir){
 		});
 		makeInActive(stat, charclassname, stat._index-dir);//previous stat
 		makeActive(stat, charclassname, stat._index);
-		
+
 	}
 }
 //toggle the inactive stat for css
@@ -59,8 +67,8 @@ $(document).ready(function(){
 	updateStat(fake,'test',0);
 
 	//TEST STUFF
-	$(".accordion_toggle").click(function(e){
-		// $('.ui.accordion').accordion();
+	$(".test.close").click(function(e){
+		$('.main.test').remove();
 	});
 	// Decrement a stat
 	$('#minus_stat_test').click(function(e){

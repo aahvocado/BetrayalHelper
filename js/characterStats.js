@@ -22,12 +22,16 @@ function createPlayer(data){
 
 	//make the card
 	$('<div></div>',{
-		class:'ui accordion fluid card ' + characterClass
+		class:'ui accordion fluid main card ' + characterClass
 	}).appendTo('#char_list');
+	//make close button
+	$('.main.card.'+characterClass).append('<div class="'+characterClass+' close">&times;</div>')
+	makeCloseListener(p.character);
+
 	//make the body of the card
 	$('<div></div>',{
 		class:'ui cards content ' + characterClass
-	}).appendTo('.'+characterClass);
+	}).appendTo('.main.card.'+characterClass);
 	//give that baby a title
 	var appendString = '';
 	appendString = p.name !='New Player' ? p.name + ' playing as ':'';
@@ -139,7 +143,7 @@ var darrinwilliams = new characterObject("Darrin 'Flash' Williams");
 	darrinwilliams.sanity = new statObject('sanity',2,[1,2,3,4,5,5,5,7]);
 	darrinwilliams.knowledge = new statObject('knowledge',2,[2,3,3,4,5,5,5,7]);
 	darrinwilliams.initStats();
-var fatherrhinehardt = new characterObject("Father rhinehardt");
+var fatherrhinehardt = new characterObject("Father Rhinehardt");
 	fatherrhinehardt.shortname = 'fatherrhinehardt';
 	fatherrhinehardt.speed = new statObject('speed',2,[1,2,2,4,4,5,5,7]);
 	fatherrhinehardt.might = new statObject('might',2,[2,3,3,4,5,6,7,7]);

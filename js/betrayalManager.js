@@ -1,6 +1,9 @@
 
 $(document).ready(function(){	
-	// Some semantic UI buisness
+	//remove existing players
+
+
+	// Some semantic UI buisiness
 	$('.ui.accordion')
 	  .accordion()
 	;
@@ -49,14 +52,15 @@ $(document).ready(function(){
 
 });
 
+//handles selectability from the dropdown
 function showSelectable(color_char){
 	$('.'+color_char).show();
 }
 function removeSelectable(color_char){
-	$('.'+color_char).hide();
+	$('.'+color_char).toggle();
 }
 function getCharColor(charName){
-	switch(charName){
+	switch(charName.toLowerCase()){
 		case 'ox bellows':
 			return 'red_char';
 			break;

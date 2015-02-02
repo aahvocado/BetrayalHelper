@@ -21,6 +21,36 @@ ul{
 	list-style: none;
 }
 /* Cool stuff */
+.close {
+	top: .3em;
+	right: .8em;
+	position: absolute;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
 /*Stat display*/
 .ui.horizontal.list>.item:first-child, .ui.horizontal.list>.item:last-child{
 	padding:0em;
@@ -80,6 +110,12 @@ ul{
 	position: absolute;
 }
 /* Override some Semantic UI stuff*/
+.ui.card>.content{
+	padding:.5em;
+}
+.ui.card>.content>.header:not(.ui){
+	margin-top: -.5em;
+}
 .ui.card>.content>.header{
 	margin-top: .2em;
 	margin-bottom: .2em;
