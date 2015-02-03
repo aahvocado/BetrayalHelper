@@ -189,7 +189,7 @@ var heathergranville = new characterObject("Heather Granville");
 	heathergranville.sanity = new statObject('sanity',2,[3,3,3,4,5,6,6,6]);
 	heathergranville.knowledge = new statObject('knowledge',4,[2,3,3,4,5,6,7,8]);
 	heathergranville.initStats();
-var vivianlopez = new characterObject("Vivan Lopez");
+var vivianlopez = new characterObject("Vivian Lopez");
 	vivianlopez.shortname = 'vivianlopez';
 	vivianlopez.speed = new statObject('speed',3,[3,4,4,4,4,6,7,8]);
 	vivianlopez.might = new statObject('might',2,[2,2,2,4,4,5,6,6]);
