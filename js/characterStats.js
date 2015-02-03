@@ -113,7 +113,7 @@ function player (name, charName){
 		case 'heather granville':
 			this.character = heathergranville;
 			break;
-		case 'vivan lopez':
+		case 'vivian lopez':
 			this.character = vivianlopez;
 			break;
 		case 'madame zostra':
